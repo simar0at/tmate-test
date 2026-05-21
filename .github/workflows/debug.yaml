@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      KUBE_CONFUG: ${{ secrets.KUBE_CONFIG }}
     steps:
     - uses: actions/checkout@v6
     - name: Set up QEMU
